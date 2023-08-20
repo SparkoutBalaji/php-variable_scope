@@ -48,7 +48,8 @@ echo "outside function local variable : $local_variable<br/>";
 $local_variable++;
 
 echo "outside function local variable : $local_variable<br/><br/>";
-
+echo "outside function local variable : $local_variable<br/><br/>";
+echo "outside function local variable : $local_variable<br/><br/>";
 
 
 $static_variable++;
@@ -57,11 +58,21 @@ echo "outside function static variable : $static_variable<br/>";
 
 $static_variable++;
 
-echo "outside function static variable : $static_variable<br/>";
+echo "outside function static variable : $static_variable<br/><br/>";
 
 $static_variable++;
 
 echo "outside function static  variable : $static_variable<br/>";
+echo "outside function static  variable : $static_variable<br/>";
+echo "outside function static  variable : $static_variable<br/><br/>";
+
+
+
+$global_variable++;
+
+echo "outside function global  variable : $global_variable<br/>";
+echo "outside function global  variable : $global_variable<br/>";
+echo "outside function global  variable : $global_variable<br/>";
 
 
 
