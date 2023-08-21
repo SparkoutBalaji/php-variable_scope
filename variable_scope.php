@@ -2,18 +2,14 @@
 
 $local_variable = 1;
 
-$function_parameter = 2;
 
-$global_variable = 3;
-
-static $static_variable = 4;
-
+$global_variable = 2;
 
 function matrix()
 {
   global $global_variable;
 
-  global $static_variable;
+  static $static_variable = 3;
 
   $static_variable++;
 
@@ -35,8 +31,6 @@ matrix();
 matrix();
 
 
-
-
 $local_variable++;
 
 echo "outside function local variable : $local_variable<br/>";
@@ -52,27 +46,7 @@ echo "outside function local variable : $local_variable<br/><br/>";
 echo "outside function local variable : $local_variable<br/><br/>";
 
 
-$static_variable++;
 
-echo "outside function static variable : $static_variable<br/>";
-
-$static_variable++;
-
-echo "outside function static variable : $static_variable<br/><br/>";
-
-$static_variable++;
-
-echo "outside function static  variable : $static_variable<br/>";
-echo "outside function static  variable : $static_variable<br/>";
-echo "outside function static  variable : $static_variable<br/><br/>";
-
-
-
-$global_variable++;
-
-echo "outside function global  variable : $global_variable<br/>";
-echo "outside function global  variable : $global_variable<br/>";
-echo "outside function global  variable : $global_variable<br/>";
 
 
 
